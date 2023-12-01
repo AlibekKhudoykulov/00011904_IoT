@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>00011904</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="data-head">Greenhouse Management System IoT</div>
+
+<div class="data-container">
+    <div class="data-item">
+        <h2>Temperature</h2>
+        <p class="value" id="temperature">22 &#8451;</p>
+    </div>
+
+    <div class="data-item">
+        <h2>Humidity</h2>
+        <p class="value" id="humidity">10%</p>
+    </div>
+    <div class="data-item">
+        <h2>Soil Moisture</h2>
+        <p class="value" id="SM">10%</p>
+    </div>
+    <div class="data-item">
+        <h2>Water Level </h2>
+        <p class="value" id="waterLevel">10%</p>
+    </div>
+</div>
+<div class="data-container">
+    <div class="data-item">
+        <h2>Ventilation</h2>
+        <button onclick="press('ventilation')" id="ventilation">turn on</button>
+
+    </div>
+    <div class="data-item">
+        <h2>Water Pump</h2>
+        <button onclick="press('water_pump')" id="water_pump">turn on</button>
+
+    </div>
+</div>
+<!-- the scripts for products you want to access must be added-->
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
