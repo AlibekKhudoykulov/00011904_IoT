@@ -36,15 +36,22 @@ dataRef1.on('value', function(getdata1){
 dataRef2.on('value', function(getdata2){
     var humi = getdata2.val();
     document.getElementById('humidity').innerHTML = humi + "%";
+    document.getElementById('humidity').style.setProperty('--percentage', humi);
+
 })
 
-dataRef3.on('value', function(getdata3){
-    var soilMoisture = getdata3.val();
-    document.getElementById('SM').innerHTML = soilMoisture + "%";
-})
+dataRef3.on('value', function(getdata3) {
+    var percentage = getdata3.val();
+
+    // Update the style of the donut element
+    document.getElementById('SM').style.setProperty('--percentage', percentage);
+    document.getElementById('SM').innerHTML = percentage + "%";
+
+});
 
 dataRef4.on('value', function(getdata4){
     var waterLevel = getdata4.val();
+    document.getElementById('waterLevel').style.setProperty('--percentage', waterLevel);
     document.getElementById('waterLevel').innerHTML = waterLevel + "%";
 })
 

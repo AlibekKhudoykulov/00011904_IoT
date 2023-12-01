@@ -18,18 +18,31 @@
 
     <div class="data-item">
         <h2>Humidity</h2>
-        <p class="value" id="humidity">10%</p>
-    </div>
-    <div class="data-item">
-        <h2>Soil Moisture</h2>
-        <p class="value" id="SM">10%</p>
-    </div>
-    <div class="data-item">
-        <h2>Water Level </h2>
-        <p class="value" id="waterLevel">10%</p>
+        <div class="semi-donut margin" id="humidity"
+             style="--percentage: 80; --fill: #c6d527;">
+            0%
+        </div>
     </div>
 </div>
 <div class="data-container">
+    <div class="data-item">
+        <h2>Soil Moisture</h2>
+        <div class="semi-donut margin" id="SM"
+             style="--percentage: 80; --fill: #27ae60;">
+            0%
+        </div>
+    </div>
+    <div class="data-item">
+        <h2>Water Level </h2>
+        <div class="semi-donut margin" id="waterLevel"
+             style="--percentage: 80; --fill: #3498db;">
+            0%
+        </div>
+    </div>
+</div>
+
+<div class="data-container">
+
     <div class="data-item">
         <h2>Ventilation</h2>
         <button onclick="press('ventilation')" id="ventilation">turn on</button>
